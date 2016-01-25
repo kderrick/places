@@ -28,5 +28,12 @@ $(document).ready(function(){
     $("input#new-month").val("");
     $("input#new-year").val("");
     $("input#new-notes").val("");
-  });
+
+    $(".listPlace").last().click(function(){
+      $("#show-places").show();
+      $("#show-places h2").text(newPlace.placeDate());
+      $(".landmark").text(newPlace.landmark);
+      $(".notes").text(newPlace.notes);
+      });
+   });
 });
